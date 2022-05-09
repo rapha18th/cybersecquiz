@@ -23,7 +23,7 @@ answer_box4.move_ip(735, 538)
 
 answer_boxes = [answer_box1, answer_box2, answer_box3, answer_box4]
 score = 0
-time_left = 10
+time_left = 30
 
 q1 = ["In which of the following, a person is constantly followed/chased by another person or group of several peoples?",
       "Phishing", "Bulling" ,"Stalking", "Identity theft", 3]
@@ -111,7 +111,7 @@ def correct_answer():
       score = score + 1
       if questions:
           question = questions.pop(0)
-          time_left = 10
+          time_left = 30
       else:
           print("End of questions")
 
@@ -124,7 +124,7 @@ def wrong_answer():
       score = score
       if questions:
           question = questions.pop(0)
-          time_left = 10
+          time_left = 30
       else:
           print("End of questions")
 
